@@ -1,11 +1,12 @@
 import './App.css';
-import Title from './components/title/title';
-import Tabs from './components/tabs/tabs';
+import Title from './components/Title/Title';
+import Tabs from './components/Tabs/Tabs';
+
 
 export default function App() {
 
-  function tabClick(): void {
-    alert('Hello!')
+  function tabClick():void  {
+    alert('Hello!');
   }
   // tabClick()
 

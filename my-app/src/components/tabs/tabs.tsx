@@ -1,4 +1,4 @@
-import './tabs.css';
+import './Tabs.css';
 import { ITabs } from '../../types/interfaces';
 
 export default function Tabs({text1,text2, text3, tabClassName, isDisabled, clickFunction}: ITabs) {

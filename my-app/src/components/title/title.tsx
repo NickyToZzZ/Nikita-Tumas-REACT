@@ -1,6 +1,6 @@
-import './title.css';
+import './Title.css';
 
-function Title({text}: {text: string}) {
+export default function Title({text}: {text: string}) {
     return ( 
         <>
         <div className="container">
@@ -9,5 +9,3 @@ function Title({text}: {text: string}) {
         </>
      )
 }
-
-export default Title
