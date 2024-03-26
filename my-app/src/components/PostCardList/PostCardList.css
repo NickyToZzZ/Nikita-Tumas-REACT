@@ -1,0 +1,10 @@
+.main-block {
+    display: flex;
+    .left-side {
+        .left-side-bottom {
+            width: 54.559vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

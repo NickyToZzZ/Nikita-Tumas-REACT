@@ -1,0 +1,40 @@
+.post-card-medium-container {
+    border-bottom: 1px solid rgba(218, 218, 218, 1);
+    padding: 0.741vw;
+    margin: 0.741vw;
+    display: flex;
+    flex-direction: column;
+    .post-card-medium-container__image {
+        margin: 0.741vw;
+    }
+    .post-card-medium-container__date {
+        margin: 0.741vw;
+        font-size: 1.186vw;
+        font-weight: 400;
+        color: rgba(141, 142, 151, 1);
+    }
+    .post-card-medium-container__title {
+        margin: 0.741vw;
+        font-size: 1.334vw;
+        font-weight: 700;
+        color: rgba(49, 48, 55, 1);
+    }
+    .post-card-medium-container-footer {
+        margin: 0.741vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .post-card-footer-medium-block {
+            display: flex;
+            justify-content: space-around;
+            .post-card-footer-medium-block__like:hover {
+                cursor: pointer;
+            }
+            .post-card-footer-medium-block__notes:hover {
+                cursor: pointer;
+            }
+            .post-card-footer-medium-block__another {
+                cursor: pointer;
+            }
+        }
+    }
+}

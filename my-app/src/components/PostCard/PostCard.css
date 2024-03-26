@@ -1,0 +1,42 @@
+.post-card-container {
+    width: 54.559vw;
+    border-bottom: 1px solid rgba(218, 218, 218, 1);
+    padding: 0.741vw;
+    .post-card-content {
+        display: flex;
+        .post-card-content-info {
+            .post-card-content-info__date {
+                font-size: 1.186vw;
+                font-weight: 400;
+                color: rgba(141, 142, 151, 1);
+            }
+            .post-card-content-info__title {
+                font-size: 2.372vw;
+                font-weight: 700;
+                color: rgba(49, 48, 55, 1);
+            }
+            .post-card-content-info__description {
+                font-size: 1.186vw;
+                font-weight: 400;
+                color: rgba(141, 142, 151, 1);
+            }
+        }
+    }
+    .post-card-footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .post-card-footer-block {
+            display: flex;
+            justify-content: space-around;
+            .post-card-footer-block__like:hover {
+                cursor: pointer;
+            }
+            .post-card-footer-block__notes:hover {
+                cursor: pointer;
+            }
+            .post-card-footer-block__another {
+                cursor: pointer;
+            }
+        }
+    }
+}

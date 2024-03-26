@@ -1,14 +1,17 @@
-import './Tabs.css';
-import { ITabs } from '../../types/interfaces';
+import './Tabs.css'
 
-export default function Tabs({text1,text2, text3, tabClassName, isDisabled, clickFunction}: ITabs) {
-    return (
+export default function Tabs() {
+    return ( 
         <>
-        <div className="container-tabs">
-            <button className={tabClassName} disabled={isDisabled} onClick={clickFunction}>{text1}</button>
-            <button className={tabClassName} disabled={isDisabled} onClick={clickFunction}>{text2}</button>
-            <button className={tabClassName} disabled={isDisabled} onClick={clickFunction}>{text3}</button>
+        <div className='tabs-container'>
+            <div className='tabs-container-content'>
+                <nav className='tabs-container-content__bar'>All</nav>
+                <nav className='tabs-container-content__bar'>My favorites</nav>
+                <nav className='tabs-container-content__bar'>Popular</nav>
+            </div>
+            <div className='tabs-container-content'></div>
         </div>
         </>
-    )
+     );
 }
+

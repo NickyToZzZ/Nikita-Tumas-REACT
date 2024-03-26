@@ -1,0 +1,9 @@
+
+.container {
+    width: 100%;
+    background-color: rgba(243, 243, 243, 1);
+    .main-container {
+        margin: 0 auto;
+        width: 83.024vw;
+    }
+}
