@@ -1,0 +1,37 @@
+import './SignIn.css'
+
+export default function SignIn() {
+    return ( 
+        <>
+        <div className="sign-in-container">
+            <header className="sign-in-header">
+                <div className="sign-in-header__burger">
+                    <img src="#" alt="#" />
+                </div>
+                <div className="sign-in-header__empty"></div>
+                <div className="sign-in-header__search">
+                    <img src="#" alt="#" />
+                </div>
+                <div className="sign-in-header__user">
+                    <img src="#" alt="#" />
+                </div>
+            </header>
+            <div className="sign-in-content">
+                <nav className="sign-in-content__back-btn">Back to home</nav>
+                <h2 className="sign-in-content__title">Sign In</h2>
+                <form className="sign-in-content-form" action="#">
+                    <h4 className="sign-in-content-form__title">Email</h4>
+                    <input className="sign-in-content-form__input" type="email" placeholder='Your email'/>
+                    <h4 className="sign-in-content-form__title">Password</h4>
+                    <input className="sign-in-content-form__input" type="password" placeholder='Your password'/>
+                    <nav className="sign-in-content-form__forgot">Forgot password?</nav>
+                    <button className="sign-in-content-form__submit-btn" type='submit'>Sign In</button>
+                    <div className="sign-in-content-form-footer">
+                        <p className="sign-in-content-form-footer__text">Don’t have an account? <span className="alttext">Sign Up</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </>
+     );
+}
