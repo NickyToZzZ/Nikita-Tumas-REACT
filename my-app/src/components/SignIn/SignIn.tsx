@@ -1,6 +1,16 @@
+import { useState } from 'react';
 import './SignIn.css'
 
 export default function SignIn() {
+    
+    const [email, setEmail] = useState<string>('')
+    const [password, setPassword] = useState<string>('')
+
+    const userInfo = {
+        email: email,
+        password: password
+    }
+
     return ( 
         <>
         <div className="sign-in-container">
@@ -21,9 +31,9 @@ export default function SignIn() {
                 <h2 className="sign-in-content__title">Sign In</h2>
                 <form className="sign-in-content-form" action="#">
                     <h4 className="sign-in-content-form__title">Email</h4>
-                    <input className="sign-in-content-form__input" type="email" placeholder='Your email'/>
+                    <input className="sign-in-content-form__input" type="email" placeholder='Your email' onChange={(e) => setEmail(e.target.value)}/>
                     <h4 className="sign-in-content-form__title">Password</h4>
-                    <input className="sign-in-content-form__input" type="password" placeholder='Your password'/>
+                    <input className="sign-in-content-form__input" type="password" placeholder='Your password' onChange={(e) => setPassword(e.target.value)}/>
                     <nav className="sign-in-content-form__forgot">Forgot password?</nav>
                     <button className="sign-in-content-form__submit-btn" type='submit'>Sign In</button>
                     <div className="sign-in-content-form-footer">
