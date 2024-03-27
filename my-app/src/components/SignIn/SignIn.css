@@ -80,6 +80,11 @@
                 font-weight: 400;
                 margin: 20px 0 20px;
             }
+            .sign-in-content-form__forgot:hover {
+                cursor: pointer;
+                color: rgba(34, 49, 170, 1);
+                font-weight: 700;
+            }
             .sign-in-content-form__submit-btn {
                 width: 100%;
                 background-color: rgba(34, 49, 170, 1);

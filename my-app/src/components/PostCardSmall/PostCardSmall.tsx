@@ -2,17 +2,17 @@ import { useEffect, useState } from 'react';
 import './PostCardSmall.css'
 import { ICard } from '../../types/interfaces';
 
-export default function PostCardSmall() {
+export default function PostCardSmall({date, image, title} : {date: string, image: string, title: string}) {
 
     const [smallCard, setsmallCard] = useState<ICard>()
     useEffect(() => {
         setsmallCard({
-            id: 3,
-            image: '#',
+            id: 1,
+            image: image,
             text: '#',
-            date: 'April 20, 2021',
-            lesson_num: 3,
-            title: 'Astronauts prep for new solar arrays on nearly seven-hour spacewalk',
+            date: date,
+            lesson_num: 1,
+            title: title,
             description: '#',
             author: 0
         })

@@ -6,9 +6,15 @@ export default function SignIn() {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
 
-    const userInfo = {
-        email: email,
-        password: password
+    function checkUser(email: string, password: string) {
+        if(!email || !password) {
+            alert('Fill email and password forms');
+            return;
+        }
+        const userInfo = {
+            email: email,
+            password: password
+        }
     }
 
     return ( 
@@ -35,7 +41,7 @@ export default function SignIn() {
                     <h4 className="sign-in-content-form__title">Password</h4>
                     <input className="sign-in-content-form__input" type="password" placeholder='Your password' onChange={(e) => setPassword(e.target.value)}/>
                     <nav className="sign-in-content-form__forgot">Forgot password?</nav>
-                    <button className="sign-in-content-form__submit-btn" type='submit'>Sign In</button>
+                    <button className="sign-in-content-form__submit-btn" type='submit' onClick={() => checkUser(email, password)}>Sign In</button>
                     <div className="sign-in-content-form-footer">
                         <p className="sign-in-content-form-footer__text">Don’t have an account? <span className="alttext">Sign Up</span></p>
                     </div>

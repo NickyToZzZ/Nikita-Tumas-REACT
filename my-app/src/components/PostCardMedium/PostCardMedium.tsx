@@ -2,17 +2,17 @@ import { useEffect, useState } from 'react';
 import './PostCardMedium.css'
 import { ICard } from '../../types/interfaces';
 
-export default function PostCardMedium() {
+export default function PostCardMedium({date, image, title} : {date: string, image: string, title: string}) {
 
     const [mediumCard, setMediumCard] = useState<ICard>()
     useEffect(() => {
         setMediumCard({
-            id: 2,
-            image: '#',
+            id: 1,
+            image: image,
             text: '#',
-            date: 'April 20, 2021',
-            lesson_num: 2,
-            title: 'Astronauts prep for new solar arrays on nearly seven-hour spacewalk',
+            date: date,
+            lesson_num: 1,
+            title: title,
             description: '#',
             author: 0
         })

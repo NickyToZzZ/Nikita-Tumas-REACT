@@ -1,0 +1,77 @@
+.success-container {
+    width: 100%;
+    background-color: rgba(243, 243, 243, 1);
+    .success-header {
+        display: grid;
+        grid-template-columns: 1fr 12fr 1fr 1fr;
+        background-color: rgba(34, 49, 170, 1);
+        padding: 0.741vw;
+        .success-header__burger {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid rgba(83, 96, 205, 1);
+        }
+        .success-header__burger:hover {
+            cursor: pointer;
+        }
+        .success-header__search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid rgba(83, 96, 205, 1);
+            border-right: 1px solid rgba(83, 96, 205, 1);
+        }
+        .success-header__search:hover {
+            cursor: pointer;
+        }
+        .success-header__user {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .success-header__user:hover {
+            cursor: pointer;
+        }
+    }
+    .success-content {
+        display: grid;
+        grid-template-rows: 0.5fr repeat(3, 1fr);
+        margin: 0 auto;
+        width: 83.024vw;
+        .success-content__back-btn {
+            color: rgba(49, 48, 55, 1);
+            font-size: 1.186vw;
+            font-weight: 400;
+            margin-top: 1.483vw;
+        }
+        .success-content__back-btn:hover {
+            cursor: pointer;
+            color: rgba(34, 49, 170, 1);
+            font-weight: 700;
+        }
+        .success-content__title {
+            color: rgba(49, 48, 55, 1);
+            font-size: 4.151vw;
+            font-weight: 700;
+        }
+        .success-content-info {
+            margin: 0 auto;
+            width: 46.256vw;
+            border: 1px solid rgba(218, 218, 218, 1);
+            border-radius: 1px;
+            padding: 2.965vw;
+            .success-content-info__btn {
+                width: 100%;
+                background-color: rgba(34, 49, 170, 1);
+                color: white;
+                font-size: 1.334vw; 
+                font-weight: 600; 
+                padding: 1.186vw;
+            }
+            .success-content-info__btn:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
