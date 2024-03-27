@@ -26,34 +26,34 @@ export default function SignUp() {
 
     return ( 
         <>
-        <div className="sign-in-container">
-            <header className="sign-in-header">
-                <div className="sign-in-header__burger">
+        <div className="sign-up-container">
+            <header className="sign-up-header">
+                <div className="sign-up-header__burger">
                     <img src="#" alt="#" />
                 </div>
-                <div className="sign-in-header__empty"></div>
-                <div className="sign-in-header__search">
+                <div className="sign-up-header__empty"></div>
+                <div className="sign-up-header__search">
                     <img src="#" alt="#" />
                 </div>
-                <div className="sign-in-header__user">
+                <div className="sign-up-header__user">
                     <img src="#" alt="#" />
                 </div>
             </header>
-            <div className="sign-in-content">
-                <nav className="sign-in-content__back-btn">Back to home</nav>
-                <h2 className="sign-in-content__title">Sign Up</h2>
-                <form className="sign-in-content-form" action="#">
-                    <h4 className="sign-in-content-form__title">Name</h4>
-                    <input className="sign-in-content-form__input" type="text" placeholder='Your name' onChange={(e) => setName(e.target.value)}/>
-                    <h4 className="sign-in-content-form__title">Email</h4>
-                    <input className="sign-in-content-form__input" type="email" placeholder='Your email' onChange={(e) => setEmail(e.target.value)}/>
-                    <h4 className="sign-in-content-form__title">Password</h4>
-                    <input className="sign-in-content-form__input" type="password" placeholder='Your password' onChange={(e) => setPassword(e.target.value)}/>
-                    <h4 className="sign-in-content-form__title">Confirm password</h4>
-                    <input className="sign-in-content-form__input" type="text" placeholder='Confirm password' onChange={(e) => setCheckPassword(e.target.value)}/>
-                    <button className="sign-in-content-form__submit-btn" type='submit' onClick={() => getUserInfo(name, email, password, checkPassword)}>Sign Up</button>
-                    <div className="sign-in-content-form-footer">
-                        <p className="sign-in-content-form-footer__text">Already have an account?<span className="alttext">Sign In</span></p>
+            <div className="sign-up-content">
+                <nav className="sign-up-content__back-btn">Back to home</nav>
+                <h2 className="sign-up-content__title">Sign Up</h2>
+                <form className="sign-up-content-form" action="#">
+                    <h4 className="sign-up-content-form__title">Name</h4>
+                    <input className="sign-up-content-form__input" type="text" placeholder='Your name' onChange={(e) => setName(e.target.value)}/>
+                    <h4 className="sign-up-content-form__title">Email</h4>
+                    <input className="sign-up-content-form__input" type="email" placeholder='Your email' onChange={(e) => setEmail(e.target.value)}/>
+                    <h4 className="sign-up-content-form__title">Password</h4>
+                    <input className="sign-up-content-form__input" type="password" placeholder='Your password' onChange={(e) => setPassword(e.target.value)}/>
+                    <h4 className="sign-up-content-form__title">Confirm password</h4>
+                    <input className="sign-up-content-form__input" type="text" placeholder='Confirm password' onChange={(e) => setCheckPassword(e.target.value)}/>
+                    <button className="sign-up-content-form__submit-btn" type='submit' onClick={() => getUserInfo(name, email, password, checkPassword)}>Sign Up</button>
+                    <div className="sign-up-content-form-footer">
+                        <p className="sign-up-content-form-footer__text">Already have an account?<span className="sign-up-alttext"> Sign In</span></p>
                     </div>
                 </form>
             </div>

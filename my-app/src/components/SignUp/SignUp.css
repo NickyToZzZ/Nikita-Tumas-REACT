@@ -1,0 +1,105 @@
+.sign-up-container {
+    width: 100%;
+    background-color: rgba(243, 243, 243, 1);
+    .sign-up-header {
+        display: grid;
+        grid-template-columns: 1fr 12fr 1fr 1fr;
+        background-color: rgba(34, 49, 170, 1);
+        padding: 0.741vw;
+        .sign-up-header__burger {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid rgba(83, 96, 205, 1);
+        }
+        .sign-up-header__burger:hover {
+            cursor: pointer;
+        }
+        .sign-up-header__search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid rgba(83, 96, 205, 1);
+            border-right: 1px solid rgba(83, 96, 205, 1);
+        }
+        .sign-up-header__search:hover {
+            cursor: pointer;
+        }
+        .sign-up-header__user {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sign-up-header__user:hover {
+            cursor: pointer;
+        }
+    }
+    .sign-up-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 83.024vw;
+        .sign-up-content__back-btn {
+            color: rgba(49, 48, 55, 1);
+            font-size: 1.186vw;
+            font-weight: 400;
+            margin-top: 1.483vw;
+        }
+        .sign-up-content__back-btn:hover {
+            cursor: pointer;
+            color: rgba(34, 49, 170, 1);
+            font-weight: 700;
+        }
+        .sign-up-content__title {
+            color: rgba(49, 48, 55, 1);
+            font-size: 4.151vw;
+            font-weight: 700;
+        }
+        .sign-up-content-form {
+            margin: 0 auto;
+            width: 46.256vw;
+            border: 1px solid rgba(218, 218, 218, 1);
+            border-radius: 1px;
+            padding: 2.965vw;
+            .sign-up-content-form__title {
+                color: rgba(49, 48, 55, 1);
+                font-size: 1.186vw;
+                font-weight: 600;
+            }
+            .sign-up-content-form__input {
+                font-size: 1.186vw;
+                font-weight: 400;
+                width: 40.32vw;
+                padding: 0.741vw;
+                border: none;
+                border-radius: 2px;
+            }
+            .sign-up-content-form__submit-btn {
+                width: 100%;
+                background-color: rgba(34, 49, 170, 1);
+                color: white;
+                font-size: 1.334vw; 
+                font-weight: 600; 
+                padding: 1.186vw;
+                margin-top: 1.186vw;
+            }
+            .sign-up-content-form__submit-btn:hover {
+                cursor: pointer;
+            }
+            .sign-up-content-form-footer {
+                text-align: center;
+                .sign-up-content-form-footer__text {
+                    color: rgba(49, 48, 55, 1);
+                    font-size: 1.186vw;
+                    font-weight: 500;
+                    .sign-up-alttext {
+                        color: rgba(34, 49, 170, 1);
+                    }
+                    .sign-up-alttext:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
